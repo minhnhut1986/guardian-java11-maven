@@ -28,4 +28,6 @@ public class PlayAndSpinResponse {
             6,
             7
     );
+    
+    public static final String KEY_CURRENT_PLAY_TURN_NUMBER = "currentPlayTurnNumber";
 }
