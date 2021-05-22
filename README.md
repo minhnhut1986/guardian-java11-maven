@@ -7,7 +7,7 @@ Framework to write and run automation test. Based on : 'TestNG', 'Selenium Web D
 3. Install chrome version >= 84
 
 ## How to use
-* Download Project
+* Clone project git clone https://github.com/minhnhut1986/guardian-java11-maven.git or download Project
 * Go to project folder
 * Run test by command line: 
 mvn clean test -Dsuite.testng.file=path_of_suite.xml
