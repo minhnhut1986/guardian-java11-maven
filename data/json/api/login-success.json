@@ -1,0 +1,59 @@
+{
+  "dev": {
+    "request": {
+      "expectation": {
+        "body": {
+
+        }
+      },
+      "actuality": {
+        "body": {
+
+        }
+      },
+      "required_key": [
+
+      ]
+    },
+    "response": {
+      "body": {
+      },
+      "required_key": []
+    }
+  },
+  "staging": {
+    "request": {
+      "expectation": {
+        "body": {
+          "userName": "qc test",
+          "password": "123"
+        }
+      },
+      "actuality": {
+        "body": {
+          "userName": "qc test",
+          "password": "123"
+        }
+      },
+      "required_key": [
+        "userName",
+        "password"
+      ]
+    },
+    "response": {
+      "body": {
+        "accessToken": "asvxt.132.4263a32199750ce140a236622350c16d3fa1c44e6.dcav1033xz",
+        "userName": "qc test",
+        "userId": 1,
+        "email": "tran.minhnhut1986@gmail.com",
+        "phone": "0983911543"
+      },
+      "required_key": [
+        "userName",
+        "userId",
+        "email",
+        "phone"
+      ]
+    }
+  }
+}

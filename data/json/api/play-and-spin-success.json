@@ -1,0 +1,55 @@
+{
+  "dev": {
+    "request": {
+      "expectation": {
+        "body": {
+        }
+      },
+      "actuality": {
+        "body": {
+        }
+      },
+      "required_key": [
+      ]
+    },
+    "response": {
+      "body": {
+      },
+      "required_key": []
+    }
+  },
+  "staging": {
+    "login": {
+      "request": {
+        "body": {
+          "userName": "qc test",
+          "password": "123"
+        }
+      }
+    },
+    "request": {
+      "expectation": {
+        "body": {
+        }
+      },
+      "actuality": {
+        "body": {
+        }
+      },
+      "required_key": [
+      ]
+    },
+    "response": {
+      "body": {
+        "id": "abc123",
+        "rewardId": 3,
+        "rewardIndex": 3,
+        "message": "Bạn đã trúng món quà index 3",
+        "currentPlayTurnNumber": 1,
+        "createdDate": 1621678994113
+      },
+      "required_key": [
+      ]
+    }
+  }
+}

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Test Suite">
+
+    <parameter name="environment" value="staging" />
+    <parameter name="platform" value="api" />
+
+    <test name="Create new user">
+        <classes>
+            <class name="taptap.api.luckySpin.test.SendQcReport">
+                <methods>
+                    <include name="sendQcReport" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
