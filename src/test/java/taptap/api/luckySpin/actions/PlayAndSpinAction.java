@@ -55,9 +55,14 @@ public class PlayAndSpinAction extends APIBaseTest {
 
             int rewardId = API.getInt(actualResponseBody, PlayAndSpinResponse.KEY_REWARD_ID);
             int rewardIndex = API.getInt(actualResponseBody, PlayAndSpinResponse.KEY_REWARD_INDEX);
+            int currentPlayTurnNumber = API.getInt(actualResponseBody, PlayAndSpinResponse.KEY_CURRENT_PLAY_TURN_NUMBER);
 
             Assert.assertTrue(PlayAndSpinResponse.LIST_VALUE_REWARD_ID.contains(rewardId));
             Assert.assertTrue(PlayAndSpinResponse.LIST_VALUE_REWARD_INDEX.contains(rewardIndex));
+            
+            if (currentPlayTurnNumber == 0) {
+                return false;
+            }
         }
 
         return true;
